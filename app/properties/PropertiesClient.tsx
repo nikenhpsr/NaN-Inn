@@ -59,6 +59,7 @@ const PropertiesClient: React.FC<PropertiesClientProps> = ({
 
   return (
     <Container>
+      <div className="py-5">
       <Heading title="Properties" subtitle="List of your properties" />
       {/* Rendering the ListingCard components */}
       <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6 gap-8">
@@ -82,6 +83,7 @@ const PropertiesClient: React.FC<PropertiesClientProps> = ({
         closeModal={closeModal} // Pass the closeModal function to EditModal
         onClose={() => setSelectedListingId(null)} // Pass the onClose function to EditModal
       />
+      </div>
     </Container>
   );
 };
