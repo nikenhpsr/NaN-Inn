@@ -1,0 +1,11 @@
+{
+  "/favicon.ico/route": "/favicon.ico",
+  "/page": "/",
+  "/properties/page": "/properties",
+  "/favorites/page": "/favorites",
+  "/api/register/route": "/api/register",
+  "/api/listings/route": "/api/listings",
+  "/listings/[listingId]/page": "/listings/[listingId]",
+  "/api/favorites/[listingId]/route": "/api/favorites/[listingId]",
+  "/api/listings/[listingId]/route": "/api/listings/[listingId]"
+}
