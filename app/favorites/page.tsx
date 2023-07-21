@@ -5,6 +5,7 @@ import getCurrentUser from "@/app/actions/getCurrentUser";
 import getFavoriteListings from "@/app/actions/getFavoriteListings";
 
 import FavoritesClient from "./FavoritesClient";
+import EmptyPage from "../components/EmptyPage";
 
 const ListingPage = async () => {
   const listings = await getFavoriteListings();
@@ -13,8 +14,10 @@ const ListingPage = async () => {
   if (listings.length === 0) {
     return (
       <ClientOnly>
-        <h1>No favorites found</h1>
-        <h3>Looks like you have no favorite listings.</h3>
+       <EmptyPage
+          title="No favorites found"
+          subtitle="Looks like you have no favorite."
+        />
       </ClientOnly>
     );
   }
